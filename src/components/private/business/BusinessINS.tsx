@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DropDownBottom from "../../icons/DropDownBottom";
+import DropDownBottom from "../../icons/DropDownButton";
 
 const BusinessINS = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

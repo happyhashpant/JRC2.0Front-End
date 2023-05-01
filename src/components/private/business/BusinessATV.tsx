@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DropDownBottom from "../../icons/DropDownButton";
+import React from "react";
 
-const BusinessTravi = () => {
+const BusinessAtv = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [datos, setDatos] = useState({ user: "", password: "" });
 
@@ -13,13 +14,13 @@ const BusinessTravi = () => {
   };
 
   return (
-    <div className="bg-[#d9d9d9] flex flex-wrap flex-col drop-shadow-lg max-w-lg  rounded-lg ">
+    <div className="bg-[#d9d9d9] flex flex-wrap flex-col drop-shadow-lg max-w-lg  rounded-lg">
       <div
         className={`bg-gray-400 flex p-2 pl-4 ${
           isMenuOpen ? "rounded-t-lg" : "rounded-lg"
         }`}
       >
-        <p className="">TRAVI</p>
+        <p className="">ATV</p>
         <div className=" flex flex-grow ">
           <DropDownBottom
             isMenuOpen={isMenuOpen}
@@ -29,7 +30,7 @@ const BusinessTravi = () => {
       </div>
       <div className={`flex w-full  ${isMenuOpen ? "block" : "hidden"}`}>
         <div className="flex flex-col p-4 w-full">
-          <label htmlFor="user">Usuario</label>
+          <label htmlFor="user">Usuario </label>
           <form action="" method="get">
             <input
               type="text"
@@ -57,4 +58,4 @@ const BusinessTravi = () => {
   );
 };
 
-export default BusinessTravi;
+export default BusinessAtv;

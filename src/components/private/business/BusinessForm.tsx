@@ -1,10 +1,10 @@
-import BusinessAtv from "./BusinessAtv";
-import { useState } from "react";
+import BusinessAtv from "./BusinessATV";
 import BusinessFacturas from "./BusinessFacturas";
 import BusinessFacturacion from "./BusinessFacturacion";
 import BusinessTravi from "./BusinessTravi";
 import BusinessCCSS from "./BusinessCCSS";
 import BusinessINS from "./BusinessINS";
+import NavBar from "../NavBar";
 
 const BusinessForm = () => {
   const [answer, setAnswer] = useState("");
@@ -17,7 +17,8 @@ const BusinessForm = () => {
   // };
 
   return (
-    <div className="bg-[#6c94b3]  p-4 flex flex-col gap-4 w-screen h-screenm ">
+    <div className="bg-[#6c94b3] flex flex-col gap-4 w-screen h-screen">
+      <NavBar />
       <BusinessAtv></BusinessAtv>
       <BusinessFacturas></BusinessFacturas>
       <BusinessFacturacion></BusinessFacturacion>

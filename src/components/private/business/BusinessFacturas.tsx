@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DropDownBottom from "../../icons/DropDownBottom";
+import DropDownBottom from "../../icons/DropDownButton";
 import React from "react";
 
 const BusinessFacturas = () => {
