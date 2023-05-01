@@ -9,7 +9,7 @@ const Landing = () => {
     <div className=" flex h-screen w-screen">
       <div className="bg-black grow"></div>
       <div className="bg-red-200 grow flex items-center">
-        {isAuthenticated ? <LoginButton /> : <LogoutButton />}
+        {isAuthenticated ? <LogoutButton /> : <LoginButton />}
       </div>
     </div>
   );
